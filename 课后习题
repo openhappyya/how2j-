@@ -1,0 +1,2 @@
+假设JDK的所在目录是：C:\Program Files\Java\jdk1.8.0_65，应该怎么调整配置？
+在最前面加上%JAVA_HOME%\bin;
