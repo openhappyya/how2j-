@@ -1,0 +1,11 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        double a = 3.14;
+        double b = 2.769343;
+        short c = 365;
+        byte d = 12;
+        char e = '吃';
+        boolean f = false;
+        String g = "不可描述";
+    }
+}
