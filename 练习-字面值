@@ -1,0 +1,13 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        double d = 2.769343;
+        short s = 365;
+        byte b = 12;
+        char c = '吃';
+        boolean f = false;
+        int i = 123456;
+        long l = 2600000L;
+        float f = 5.4873f;
+        String str = "阴阳怪气"
+    }
+}
