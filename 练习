@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	System.out.println("今天是什么日子？");
+    	int a=s.nextInt();
+    	String k=a < 6 ? "今天是工作日" : "今天是周末";
+    	System.out.println(k);
+    }
+}//练习-判断是否是工作日
+
