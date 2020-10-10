@@ -1,0 +1,18 @@
+public class Item{
+	String name;//名字
+	int price;//价格
+	float freigt;//运费
+	String date;//保质期
+	int size;//尺码
+	public static void main(String[] args) {
+		
+
+		Item heyshoe = new Item();
+		heyshoe.name ="鞋";
+		heyshoe.price = 300;
+		heyshoe.freigt = 10;
+		heyshoe.date = 3;
+		heyshoe.size = 37;
+	}
+
+}
