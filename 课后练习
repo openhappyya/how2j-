@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	int a = s.nextInt();
+    	int b = s.nextInt();
+    	int c;
+    	c=a+b;
+    	System.out.println("第一个整数："+a);
+    	System.out.println("第二个整数："+b);
+    	System.out.println("两个数的和是"+c);
+    	
+
+    }
+
+}
+
+
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	double heigh;
+    	int wight;
+    	double c;
+    	System.out.println("请输入身高（m）：");
+    	heigh = s.nextDouble();
+    	c=heigh*heigh;
+    	System.out.println("请输入体重（kg）：");
+    	wight=s.nextInt();
+    	System.out.print("当前的BMI是：");
+    	System.out.print(wight/c);
+    	
+    	
+
+    }
+
+}
