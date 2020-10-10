@@ -1,0 +1,19 @@
+public class Item{
+	String name;
+	int price;
+	public static void main(String[] args) {
+		Item bloodbot = new Item();
+		bloodbot.name = "血瓶";
+		bloodbot.price = 50;
+		
+
+		Item heyshoe = new Item();
+		heyshoe.name ="草鞋";
+		heyshoe.price = 300;
+		
+		Item longsword = new Item()；
+		longsword.name ="长剑";
+		longsword.price = 350;
+	}
+
+}
