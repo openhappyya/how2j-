@@ -9,3 +9,31 @@ public class HelloJava {
     }
 }//练习-判断是否是工作日
 
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	System.out.println("请输入体重（KG）");
+    	int weight=s.nextInt();
+    	System.out.println("请输入身高（m）");
+    	float high=s.nextFloat();
+    	float BMI=weight/(high*high);
+    	System.out.println("当前的BMI是："+BMI);
+    	String S;
+    	if(BMI<18.5)
+    		S="体重过轻";
+    	else if(BMI>=18.5&&BMI<24)
+    		S="正常范围";
+    	else if(BMI>=24&&BMI<27)
+    		S="体重过重";
+    	else if(BMI>=27&&BMI<30)
+    		S="轻度肥胖";
+    	else if(BMI>=30&&BMI<35)
+    		S="中度肥胖";
+    	else
+    		S="重度肥胖";
+    	System.out.println("身体状态是："+S);
+    }
+}//练习-BMI
+
+
