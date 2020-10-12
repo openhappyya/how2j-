@@ -36,4 +36,103 @@ public class HelloJava {
     }
 }//练习-BMI
 
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	int year=s.nextInt();
+    	if(year%4==0&&year%100!=0||year%400==0)
+    		System.out.println(year+"是闰年");
+    	else
+    		System.out.println(year+"不是闰年");
+    }
+}//练习-闰年
 
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	int month=s.nextInt();
+    	switch(month) {
+    	case 1:
+    		System.out.println("冬天");
+    		break;
+    	case 2:
+    		System.out.println("冬天");
+    		break;
+    	case 3:
+    		System.out.println("春天");
+    		break;
+    	case 4:
+    		System.out.println("春天");
+    		break;
+    	case 5:
+    		System.out.println("春天");
+    		break;
+    	case 6:
+    		System.out.println("夏天");
+    		break;
+    	case 7:
+    		System.out.println("夏天");
+    		break;
+    	case 8:
+    		System.out.println("夏天");
+    		break;
+    	case 9:
+    		System.out.println("秋天");
+    		break;
+    	case 10:
+    		System.out.println("秋天");
+    		break;
+    	case 11:
+    		System.out.println("秋天");
+    		break;
+    	case 12:
+    		System.out.println("冬天");
+    		break;
+    	
+    	}
+    }
+}//练习-季节
+
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	Scanner s = new Scanner(System.in);
+    	System.out.println("请输入一个整数");
+    	int month=s.nextInt();
+    	int i=1;
+    	int k=1;
+    	while(i<=month)
+    	{
+    		k=i*k;
+    		i++;
+    	}
+    	System.out.println("阶乘是"+k);
+    }
+}//练习-阶乘 
+
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	int k=1,m=0;
+    	for(int i=1;i<=10;i++) {
+    		m=m+k;
+    		k=k*2;
+    	}
+    	System.out.println(m);
+    }
+}//练习-乞丐
+
+import java.util.Scanner;
+public class HelloJava {
+    public static void main(String[] args) {
+    	int i;
+    	for(i=1;i<=100;i++) {
+    		if(i%3==0||i%5==0)
+    			continue;
+    		System.out.println(i);
+    	}
+
+    }
+}//练习-忽略倍数 
