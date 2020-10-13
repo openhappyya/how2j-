@@ -136,3 +136,33 @@ public class HelloJava {
 
     }
 }//练习-忽略倍数 
+
+import java.util.Scanner;
+public class Customer {
+	 public static void main(String[] args) {
+		 double P=1.2;
+		 double c=0.2;
+		 double F=P;
+		 int sum=0,i;
+		 for(i=1;i<100;i++) {
+			 F=F*(1+c);
+			 sum+=F;
+			 if(sum>=100) {
+				 break;
+				 
+			 }
+		 }System.out.println(i);
+		 
+	 }
+}//练习-百万富翁
+	
+	
+
+
+
+    
+
+
+
+
+
