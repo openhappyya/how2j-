@@ -211,3 +211,49 @@ public class test {
 
 }
 //练习-二维数组排序 
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Item extends Armor{
+	int protectStandard;
+
+		public static void main(String[] args)
+		{
+			Item buJia=new Item();
+			Item suoZiJia=new Item();
+			buJia.name="布甲";
+			buJia.prise=300;
+			buJia.protectStandard=15;
+			suoZiJia.name="锁子甲";
+			suoZiJia.prise=500;
+			suoZiJia.protectStandard=40;
+		}
+		
+
+}
+//练习-护甲
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Hero extends Support{
+
+	String name;
+			int hp;
+
+}
+
+package My;
+
+public class Support {
+	public void heal() {
+		System.out.println("治疗");
+	}
+	public void heal(Hero h) {
+		System.out.println("为"+h.name+"加血");
+	}
+	public void heal(Hero h,int hp) {
+		System.out.println("为"+h.name+"加血"+hp);
+	}
+
+}
+//练习-治疗
