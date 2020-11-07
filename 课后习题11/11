@@ -310,3 +310,39 @@ public class Hero{
 
 }
 //练习-构造方法(this)
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Hero {
+    private Hero() {
+	}
+    private static Hero garen=new Hero();
+    public static Hero getGaren() {
+		return garen;
+	}
+    public static void main(String[] args) {
+		Hero g1=Hero.getGaren();
+		Hero g2=Hero.getGaren();
+		System.out.println(g1==g2);
+	}
+}
+
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Item {
+    private Item() {
+	}
+    private static Item gi;
+    public static Item getItem() {
+		if(gi==null) {
+			gi=new Item();
+		}
+		return gi;
+	}
+    public static void main(String[] args) {
+		Item g1=Item.getItem();
+		Item g2=Item.getItem();
+		System.out.println(g1==g2);
+	}
+}
