@@ -257,3 +257,56 @@ public class Support {
 
 }
 //练习-治疗
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Hero{
+	String name;
+	float HP;
+	float armor;
+	int moveSpeed;
+
+	public Hero(String heroName,float heroHP,float heroArmor,int heroMoveSpeed) {
+		name=heroName;
+		HP=heroHP;
+		armor=heroArmor;
+		moveSpeed=heroMoveSpeed;
+	}
+	public static void main(String[] args) {
+		Hero garen=new Hero("盖伦", 383, (float) 22.5,10);
+	}
+
+
+}
+//练习-构造方法
+package first;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Hero{
+	String name;
+	float HP;
+	float armor;
+	int moveSpeed;
+	public Hero(String name,float HP) {
+		this.name=name;
+		this.HP=HP;
+		System.out.println("一个参数的构造方法");
+	}
+
+	public Hero(String name,float HP,float armor,int moveSpeed) {
+		this(name,HP);
+		System.out.println("两个参数的构造方法");
+		this.name=name;
+		this.HP=HP;
+		this.armor=armor;
+		this.moveSpeed=moveSpeed;
+	}
+	public static void main(String[] args) {
+		Hero zl=new Hero("涨了",22);
+		Hero garen=new Hero("盖伦", 383, (float) 22.5,10);
+		System.out.println(garen.name);
+	}
+
+
+}
+//练习-构造方法(this)
