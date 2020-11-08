@@ -390,3 +390,35 @@ public enum HeroType {
 
 }
 //练习-枚举
+package My;
+
+public interface Healer{
+	public void heal();
+
+}
+package My;
+
+public class Support extends Hero implements Healer{
+
+	public void heal() {
+		System.out.println("治疗英雄中");
+	}
+}
+//练习-接口
+package My;
+
+public class MagicPotion extends Item{
+	public void effect() {
+		System.out.println("蓝瓶使用后，可以回魔法");
+	}
+
+}
+package My;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Item {
+    public void effect() {
+		System.out.println("物品使用后可以有效果");
+	}
+}
+//练习-重写
