@@ -422,3 +422,41 @@ public class Item {
 	}
 }
 //练习-重写
+package My;
+
+public class testmain {
+	public static void main(String[] args) {
+		Hero garen=new Hero();
+		Mortal adap=new ADAPHero();
+		Mortal ad=new ADHero();
+		Mortal ap=new APHero();
+		garen.kill(adap);
+		garen.kill(ap);
+		garen.kill(ad);
+		
+	}
+	
+
+}
+package My;
+
+public class Hero {
+	public void kill(Mortal m) {
+		m.die();
+	}
+}
+package My;
+
+public class ADAPHero implements Mortal{
+	public void die() {
+		System.out.println("adap死亡");
+	}
+
+}
+package My;
+
+public interface Mortal {
+	public void die() ;
+
+}
+//练习-多态
